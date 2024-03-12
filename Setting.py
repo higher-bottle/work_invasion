@@ -11,7 +11,8 @@ class Setting:
     def __init__(self):
        
         self.bg_color = (230,230,230)
-        
+        self.screen_size = (800,900)
+
         self.level_setting()
         self.music_setting()
         self.boss_setting()
@@ -27,17 +28,10 @@ class Setting:
         self.level = 0
         
     def music_setting(self):
-        # self.music_money='Music/金币.mp3'
         self.music_money = os.path.join("Music",'金币.mp3')
-        # self.music_wrong='Music/wrong.mp3'
         self.music_wrong = os.path.join("Music", 'wrong.mp3')
-        # self.music_level=''
-        # self.music_bg='Music/酷龙 - 난!.mp3'
-        self.music_bg = os.path.join("Music", '酷龙 - 난!.mp3')
-        # self.sound_play = True
-        # self.sound_image = 'Image/sound.png'
+        self.music_bg = os.path.join("Music", 'bgm.mp3')
         self.sound_image = os.path.join("Image", 'sound.png')
-        # self.mute_image = 'Image/mute.png'
         self.mute_image = os.path.join("Image", 'mute.png')
 
     def boss_setting(self):

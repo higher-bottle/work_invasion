@@ -56,7 +56,7 @@ class Bullet(Sprite):
         self.setting=ai_game.setting
         self.screen=ai_game.screen
         self.color=self.setting.bullet_color
-        self.rect = pg.Rect(0, 0, 3,15)
+        self.rect = pg.Rect(0, 0, 8,15)
         self.rect.midtop=ai_game.ship.rect.midtop
         self.y = float(self.rect.y)
 

@@ -25,8 +25,8 @@ class AlienInvasion:
         self.music=Music(self)
         
         
-        self.screen=pg.display.set_mode((800,1000),pg.RESIZABLE)
-        self.screen_width=800
+        self.screen=pg.display.set_mode(self.setting.screen_size,pg.RESIZABLE)
+        self.screen_width=self.screen.get_width()
         self.screen_change=False
         pg.display.set_caption("Alien Invation")
         self.ship=Ship(self)
