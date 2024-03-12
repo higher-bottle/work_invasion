@@ -6,6 +6,7 @@ Created on Thu Feb 29 18:27:17 2024
 @author: bingtinghuangfu
 """
 
+import os
 class Setting:
     def __init__(self):
        
@@ -26,16 +27,22 @@ class Setting:
         self.level = 0
         
     def music_setting(self):
-        self.music_money='Music/金币.mp3'
-        self.music_wrong='Music/wrong.mp3'
+        # self.music_money='Music/金币.mp3'
+        self.music_money = os.path.join("Music",'金币.mp3')
+        # self.music_wrong='Music/wrong.mp3'
+        self.music_wrong = os.path.join("Music", 'wrong.mp3')
         # self.music_level=''
-        self.music_bg='Music/酷龙 - 난!.mp3'
+        # self.music_bg='Music/酷龙 - 난!.mp3'
+        self.music_bg = os.path.join("Music", '酷龙 - 난!.mp3')
         # self.sound_play = True
-        self.sound_image = 'Image/sound.png'
-        self.mute_image = 'Image/mute.png'
+        # self.sound_image = 'Image/sound.png'
+        self.sound_image = os.path.join("Image", 'sound.png')
+        # self.mute_image = 'Image/mute.png'
+        self.mute_image = os.path.join("Image", 'mute.png')
 
     def boss_setting(self):
-        self.Boss_image='Image/Boss.png'
+        # self.Boss_image='Image/Boss.png'
+        self.Boss_image = os.path.join("Image", 'Boss.png')
         self.boss_width=100
         
     def bullet_setting(self):
@@ -46,7 +53,9 @@ class Setting:
     def alien_setting(self):
         self.alien_width = 50
         
-        self.alien_image_1 = 'Image/excel.png'
+        # self.alien_image_1 = 'Image/excel.png'
+        self.alien_image_1 = os.path.join("Image", 'excel.png')
+
         self.alien_speed = 0.5
         self.alien_speedup_scale = 1.2#加速系数
         self.alien_num_scale=1.1
@@ -54,7 +63,9 @@ class Setting:
         self.alien_num = 10#每一轮alien掉落个数
         self.alien_count = 0
         
-        self.alien_image_2 = 'Image/powerpoint.png'
+        # self.alien_image_2 = 'Image/powerpoint.png'
+        self.alien_image_2 = os.path.join("Image", 'powerpoint.png')
+
         self.alien_speed_2 = 0.2
         self.alien_num_2 = 4
         self.alien_count_2 = 0
@@ -64,16 +75,18 @@ class Setting:
 
     def heart_setting(self):
         self.heart_width = 30
-        self.heart_image = 'Image/heart.png'
+        # self.heart_image = 'Image/heart.png'
+        self.heart_image = os.path.join("Image", 'heart.png')
         
     def ship_setting(self):
-        self.ship_image='Image/Ship.PNG'
+        self.ship_image = os.path.join('Image','Ship.png')
         self.ship_width=130
         self.ship_height=180
         self.ship_limit=2
 
+
     def arrow_setting(self):
-        self.arrow_image='Image/arrow.jpg'
+        self.arrow_image = os.path.join("Image", 'arrow.jpg')
 
 
 
